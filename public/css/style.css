@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hwb(86 6% 35%) !important;
+}
+
+span {
+  position: relative;
+  z-index: 1;
+}
+span::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -0.25em;
+  right: -0.25em;
+  background-color: #f2ff00;
+  transform-origin: bottom center;
+  transform: scaleY(0.1);
+  transition: all 0.1s ease-in-out;
+}
+span:hover::before {
+  transform: scaleY(1);
+  background-color: hsla(35, 100%, 51%, 0.75);
+}
+
+/* header styling */
+.container {
+  margin-top: 2rem;
+}
+
+.nav-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-container .navbar {
+  background-color: #d3d694 !important;
+  border-radius: 50px;
+}
+.nav-container .navbar:hover {
+  background-color: white !important;
+  transition: 1s;
+}
+.nav-container a {
+  color: #000000;
+}
+.nav-container a:hover {
+  scale: 1.06;
+  background-color: rgb(34, 31, 31) !important;
+  color: aliceblue;
+  border-radius: 50px;
+  transition: 1s;
+}
+
+/* carousel styling */
+.carousel {
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+}
+.carousel .carousel-inner {
+  border-radius: 50px;
+}
+
+/* activities styling */
+.activities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.activities .card {
+  border-radius: 30px !important;
+  padding: 5px;
+}
+.activities .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: rgb(230, 153, 30);
+}
+
+/* school stars */
+.card {
+  background-color: transparent !important;
+}
+.card:hover {
+  scale: 1.06;
+  background-color: white !important;
+  transition: 1s;
+}
+.card img:hover {
+  scale: 1.05;
+  transition: 1s;
+}
+.card .stars {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-body img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+}
+.card .card-body .title {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* mab */
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer iframe {
+  width: 100%;
+  height: 360px;
+}
+.footer .mab .contact .card {
+  background-color: red !important;
+}
+.footer .mab .contact .col-sm-6 {
+  width: 500%;
+}
+.footer .mab .contact .row .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 360px;
+  background-color: red !important;
+}
+.footer .mab .contact .row .address .one {
+  margin-top: 20px;
+  padding: 5px 4% !important;
+  text-align: center;
+}
+.footer .mab .contact .row .address .tow {
+  padding: 5px 7% !important;
+  text-align: center;
+}
+.footer .mab .contact .row .address .tree {
+  padding: 5px 15% !important;
+  text-align: center;
+}
+.footer .mab .contact .row .address .four {
+  padding: 5px 20% !important;
+  text-align: center;
+}
+.footer .mab .contact .row .address .five {
+  padding: 5px 25% !important;
+  text-align: center;
+}
+.footer .mab .contact .row .address .six {
+  padding: 5px 5% !important;
+  text-align: center;
+}
+
+/* page log in styles */
+.log-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  border-radius: 50px;
+  background-color: #0ff9a3;
+}
+.log-in .error-message {
+  margin: 5px;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+}
+
+/* page sign-up styles */
+.gradient-custom {
+  background: #918703;
+  background: linear-gradient(to bottom right, rgba(172, 210, 0, 0.802), rgb(245, 87, 108));
+}
+.gradient-custom .card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+.gradient-custom .card-registration .select-arrow {
+  top: 13px;
+}
+
+.input-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 1-student styling */
+.student-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.student-card h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* table styling 1-student */
+.card-m table td,
+.card-m table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card-m .table-scroll {
+  border-radius: 0.5rem;
+}
+.card-m .table-scroll table thead th {
+  color: #fff;
+  text-align: center;
+}
+
+/* process styling */
+.process-box {
+  background: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.3411764706);
+}
+.process-box.process-left:after, .process-box.process-right:after {
+  content: "";
+  display: inline-grid;
+  position: absolute;
+  top: 42%;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+.process-box.process-left:after {
+  border-top: 15px solid #ffffff;
+  border-bottom: 15px solid #ffffff;
+  border-left: 15px solid #ffffff;
+  border-right: 15px solid #ffffff;
+  right: -15px;
+  box-shadow: 3px -2px 3px 0px rgba(0, 0, 0, 0.2117647059);
+}
+.process-box.process-right:after {
+  border-top: 15px solid rgba(255, 255, 255, 0);
+  border-bottom: 15px solid #ffffff;
+  border-left: 15px solid #ffffff;
+  border-right: 15px solid rgba(255, 255, 255, 0);
+  left: -15px;
+  box-shadow: -1px 1px 3px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.process-box .process-step {
+  background: #00bcd4;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  height: 100%;
+  padding-top: 8px;
+  position: relative;
+  top: -26px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: -6px 8px 0px 0px rgba(0, 0, 0, 0.0784313725);
+}
+.process-box .process-step p {
+  font-size: 20px;
+}
+.process-box .process-step h2 {
+  font-size: 39px;
+}
+
+/* 2-student styling */
+.card-2 {
+  border-radius: 0.5rem;
+}
+.card-2 table td,
+.card-2 table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
