@@ -1,0 +1,12 @@
+console.log("hellllo")
+import './css/style.scss'
+const img1 = require('./assets/carouselimages/bbc-creative-1w20Cysy1cg-unsplash.jpg')
+const img3 = require('./assets/carouselimages/ivan-aleksic-PDRFeeDniCk-unsplash.jpg')
+const img2 = require('./assets/carouselimages/redd-f-9o8YdYGTT64-unsplash.jpg')
+const img4 = require('./assets/students/ben-mullins-je240KkJIuA-unsplash.jpg')
+const img5 = require('./assets/students/gabriel-tovar-RDf0qh6VvQ0-unsplash.jpg')
+const img6 = require('./assets/students/garrett-jackson-LhNkJMayglI-unsplash.jpg')
+const img7 = require('./assets/students/jeremiah-lawrence-QJmmEoE-6cY-unsplash.jpg')
+const img8 = require('./assets/students/jeremiah-lawrence-tc8ayiKwUVY-unsplash.jpg')
+const img9 = require('./assets/students/zahra-amiri-KsuX-F_e2II-unsplash.jpg')
+const img10 = require('./assets/noun-school-3652203.png')
